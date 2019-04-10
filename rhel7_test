@@ -1,0 +1,71 @@
+
+POST https://www.googleapis.com/compute/v1/projects/astral-sunbeam-234914/zones/europe-west2-a/instances
+{
+  "kind": "compute#instance",
+  "name": "rhel7-test",
+  "zone": "projects/astral-sunbeam-234914/zones/europe-west2-a",
+  "machineType": "projects/astral-sunbeam-234914/zones/europe-west2-a/machineTypes/n1-standard-2",
+  "displayDevice": {
+    "enableDisplay": false
+  },
+  "metadata": {
+    "kind": "compute#metadata",
+    "items": []
+  },
+  "tags": {
+    "items": 
+	{
+	"tag1": "tag123"
+	"tag2": "tag234"
+	}
+	]
+  },
+  "disks": [
+    {
+      "kind": "compute#attachedDisk",
+      "type": "PERSISTENT",
+      "boot": true,
+      "mode": "READ_WRITE",
+      "autoDelete": true,
+      "deviceName": "rhel7-test",
+      "initializeParams": {
+        "sourceImage": "projects/rhel-cloud/global/images/rhel-7-v20190326",
+        "diskType": "projects/astral-sunbeam-234914/zones/europe-west2-a/diskTypes/pd-standard",
+        "diskSizeGb": "10"
+      },
+      "diskEncryptionKey": {
+        "kmsKeyName": "projects/astral-sunbeam-234914/locations/europe-west2/keyRings/testkeyring1/cryptoKeys/key1"
+      }
+    }
+  ],
+  "canIpForward": false,
+  "networkInterfaces": [
+    {
+      "kind": "compute#networkInterface",
+      "subnetwork": "projects/astral-sunbeam-234914/regions/europe-west2/subnetworks/default",
+      "aliasIpRanges": []
+    }
+  ],
+  "description": "",
+  "labels": {},
+  "scheduling": {
+    "preemptible": false,
+    "onHostMaintenance": "MIGRATE",
+    "automaticRestart": true,
+    "nodeAffinities": []
+  },
+  "deletionProtection": false,
+  "serviceAccounts": [
+    {
+      "email": "121376756614-compute@developer.gserviceaccount.com",
+      "scopes": [
+        "https://www.googleapis.com/auth/devstorage.read_only",
+        "https://www.googleapis.com/auth/logging.write",
+        "https://www.googleapis.com/auth/monitoring.write",
+        "https://www.googleapis.com/auth/servicecontrol",
+        "https://www.googleapis.com/auth/service.management.readonly",
+        "https://www.googleapis.com/auth/trace.append"
+      ]
+    }
+  ]
+}
