@@ -16,8 +16,8 @@ imports:
 - path: cluster.py
 
 resources:
-- name: my-cluster
+- name: my-cluster01
   type: cluster.py
   properties:
-    zone: ZONE_TO_RUN
+    zone: europe-west2-b
 
