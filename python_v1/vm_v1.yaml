@@ -13,6 +13,7 @@
 # limitations under the License.
 
 imports:
+<<<<<<< HEAD
 - path: vm_template_v2.py
 
 resources:
