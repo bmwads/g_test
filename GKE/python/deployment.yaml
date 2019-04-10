@@ -19,5 +19,5 @@ resources:
 - name: my-service
   type: deployment.py
   properties:
-    clusterType: <cluster-type>
+    clusterType: container.v1.cluster
     image: gcr.io/deployment-manager-examples/nodejsservicestatic
