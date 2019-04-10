@@ -25,10 +25,9 @@ def GenerateConfig(unused_context):
       'type': 'compute.v1.instance',
       'properties': {
           'zone': 'us-central1-f',
-          'machineType': ''.join([COMPUTE_URL_BASE, 'projects/',
-                                  context.env['project'], '/zones/',
-                                  context.properties['zone'],
-                                  '/machineTypes/n1-standard-1']),
+          'machineType': ''.join([COMPUTE_URL_BASE, 'projects/[MY_PROJECT]',
+                                '/zones/us-central1-f/',
+                                'machineTypes/f1-micro']),
           'disks': [{
               'deviceName': 'boot',
               'type': 'PERSISTENT',
