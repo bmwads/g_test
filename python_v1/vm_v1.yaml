@@ -13,10 +13,10 @@
 # limitations under the License.
 
 imports:
-- path: vm_template.py
+- path: vm_template_v2.py
 
 resources:
-- name: vm_template
-  type: vm_template.py
+- name: vm_template_v2
+  type: vm_template_v2.py
   properties:
     zone: europe-west1-b
