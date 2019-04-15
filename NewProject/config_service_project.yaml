@@ -2,7 +2,7 @@ imports:
 - path: project.py
 
 resources:
-- name: SERVICE_PROJECT
+- name: TEST-SERVICE_PROJECT
   type: project.py
   properties:
     # CHANGEME: Change this to your organization ID.
@@ -11,7 +11,7 @@ resources:
     # the Organization ID above to configure Shared VPC.
     #parent-folder-id: "FOLDER_ID"
     # CHANGEME: Change the following to your organization's billing account
-    billing-account-name: billingAccounts/BILLING_ACCOUNT_ID
+    billing-account-name: billingAccounts/010A29-225CF1-C09D51
     # The apis to enable in the new project.
     # To see the possible APIs, use gcloud CLI: gcloud services list --available
     apis:
