@@ -23,7 +23,7 @@ def GenerateConfig(context):
   project_id = context.env['name']
   billing_name = 'billing_' + project_id
 
-   if 'project-name' in context.properties:
+  if 'project-name' in context.properties:
     project_name = context.properties['project-name']
   else:
     project_name = project_id
