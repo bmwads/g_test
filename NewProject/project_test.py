@@ -50,7 +50,7 @@ def GenerateConfig(context):
           'billingAccountName': context.properties['billing-account-name']
       }
   }, {
-      'name': 'apis',
+      'name': apis
       'type': 'apis.py',
       'properties': {
           'project': project_id,
