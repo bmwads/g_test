@@ -1,9 +1,9 @@
 imports:
-- path: project.py
+- path: project_test.py
 
 resources:
-- name: TEST-SERVICE_PROJECT
-  type: project.py
+- name: TEST-git fetchSERVICE_PROJECT
+  type: project_test.py
   properties:
     # CHANGEME: Change this to your organization ID.
     #organization-id: "ORG_ID"
