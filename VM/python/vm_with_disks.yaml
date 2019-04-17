@@ -23,4 +23,4 @@ resources:
     disks:
      - sizeGb: 50
        diskType: pd-standard
-       name: disk-1
+       name: vmname-disk-1
