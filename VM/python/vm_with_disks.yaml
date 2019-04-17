@@ -16,7 +16,7 @@ imports:
 - path: vm_with_disks.py
 
 resources:
-- name: vm-with-disks
+- name: vm-with-disks01
   type: vm_with_disks.py
   properties:
     zone: europe-west2-b
