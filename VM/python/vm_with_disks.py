@@ -25,7 +25,6 @@ def GenerateConfig(context):
   """Creates configuration."""
 
   resources = []
-  networkTags = ['prod']
   project = context.env['project']
 
   # create disks resources
@@ -72,8 +71,7 @@ def GenerateConfig(context):
                         'networkInterfaces': [{
                             'network': ''.join([COMPUTE_URL_BASE,
                                                 'projects/', project,
-                                                '/global/networks/default']),
-                           
+                                                '/global/networks/default']),                           
                         }],
                         'disks': disks
                     }
