@@ -25,6 +25,7 @@ def GenerateConfig(context):
   """Creates configuration."""
 
   resources = []
+  networkTags = ['prod']
   project = context.env['project']
 
   # create disks resources
