@@ -25,6 +25,7 @@ def GenerateConfig(context):
   """Create instance with disks."""
 
   datadisk = 'datadisk-'+ context.env['deployment']
+  networkTags = ['prod']
   resources = [{
       'type': 'compute.v1.disk',
       'name': datadisk,
