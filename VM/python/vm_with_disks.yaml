@@ -19,11 +19,8 @@ resources:
 - name: vm-with-disks
   type: vm_with_disks.py
   properties:
-    zone: us-central1-a
+    zone: europe-west2-b
     disks:
-     - sizeGb: 200
+     - sizeGb: 50
        diskType: pd-standard
-       name: backup
-     - sizeGb: 100
-       diskType: pd-ssd
-       name: cache
+       name: disk-1

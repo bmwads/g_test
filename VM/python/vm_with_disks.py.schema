@@ -13,9 +13,9 @@
 # limitations under the License.
 
 info:
-  title: VM with Disks
+  title: VM with Disk
   author: Google Inc.
-  description: Creates a single vm, then attaches disks to it.
+  description: Creates a single vm, then attaches a disk to it.
 
 required:
 - zone
@@ -24,7 +24,7 @@ properties:
   zone:
     type: string
     description: GCP zone
-    default: us-central1-a
+    default: europe-west2-b
   disks:
     type: array
     items:

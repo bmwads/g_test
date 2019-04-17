@@ -48,8 +48,8 @@ def GenerateConfig(context):
                 'initializeParams': {
                     'diskName': project + '-boot',
                     'sourceImage': ''.join([COMPUTE_URL_BASE, 'projects/',
-                                            'debian-cloud/global/images/',
-                                            'family/debian-9'])
+                                                'rhel-cloud/global/'
+                                                 'images/rhel-7-v20190326'])
                 }
                })
   for disk_obj in context.properties['disks']:
@@ -71,10 +71,8 @@ def GenerateConfig(context):
                         'networkInterfaces': [{
                             'network': ''.join([COMPUTE_URL_BASE,
                                                 'projects/', project,
-                                                '/global/networks/default']),
-                            'accessConfigs': [{
-                                'name': 'External NAT',
-                                'type': 'ONE_TO_ONE_NAT'}],
+                                                '/shared-net/eu2-sandbox']),
+                           
                         }],
                         'disks': disks
                     }
