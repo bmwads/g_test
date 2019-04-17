@@ -71,7 +71,7 @@ def GenerateConfig(context):
                         'networkInterfaces': [{
                             'network': ''.join([COMPUTE_URL_BASE,
                                                 'projects/', project,
-                                                '//global/networks/default']),
+                                                '/global/networks/default']),
                            
                         }],
                         'disks': disks
