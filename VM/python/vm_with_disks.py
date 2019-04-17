@@ -71,7 +71,7 @@ def GenerateConfig(context):
                         'networkInterfaces': [{
                             'network': ''.join([COMPUTE_URL_BASE,
                                                 'projects/', project,
-                                                '/shared-net/eu2-sandbox']),
+                                                '/global/default/default']),
                            
                         }],
                         'disks': disks
