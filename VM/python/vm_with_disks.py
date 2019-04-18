@@ -75,22 +75,5 @@ def GenerateConfig(context):
                         }],
                         'disks': disks
                     }
-                    "labels": [{
-                            "key": "test1",
-                            "value": "test"
-                    },
-                    {
-                            "key": "test2",
-                            "value": "thisisatest"
-                        }]
-                   })
-                   "networkTags": [{
-                            "key": "test1",
-                            "value": "test"
-                    },
-                    {
-                            "key": "test2",
-                            "value": "thisisatest"
-                        }]
                    })
   return {'resources': resources}
