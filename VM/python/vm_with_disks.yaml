@@ -26,4 +26,3 @@ resources:
      - sizeGb: 50
        diskType: pd-standard
        name: namefieldinyamlfilefordisks
-    tags: prod
