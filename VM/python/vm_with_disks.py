@@ -46,7 +46,6 @@ def GenerateConfig(context):
                 'boot': True,
                 'autoDelete': True,
                 'initializeParams': {
-                    #'diskName': instance + '-boot',
                     'sourceImage': ''.join([COMPUTE_URL_BASE, 'projects/',
                                                 'rhel-cloud/global/'
                                                  'images/rhel-7-v20190326'])
@@ -71,7 +70,8 @@ def GenerateConfig(context):
                         'networkInterfaces': [{
                             'network': ''.join([COMPUTE_URL_BASE,
                                                 'projects/', project,
-                                                '/global/networks/default']),                           
+                                                '/global/networks/default']),
+                            'tags' : ['testtag'],                          
                         }],
                         'disks': disks
                     }

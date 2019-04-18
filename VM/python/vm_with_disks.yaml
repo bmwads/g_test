@@ -20,9 +20,7 @@ resources:
   type: vm_with_disks.py
   properties:
     zone: europe-west2-b
-    tags:
-        -testttttt
     disks:
      - sizeGb: 50
        diskType: pd-standard
-       name: namefieldinyamlfilefordisks
+       name: datadisk
