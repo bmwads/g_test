@@ -16,12 +16,12 @@ imports:
 - path: vm_with_disks.py
 
 resources:
-- name: vm-with-disks01
+- name: namefieldinyamlfile
   type: vm_with_disks.py
   properties:
     zone: europe-west2-b
     disks:
      - sizeGb: 50
        diskType: pd-standard
-       name: vmname-disk-1
+       name: namefieldinyamlfilefordisks
     tags: prod
