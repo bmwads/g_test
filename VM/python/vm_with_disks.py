@@ -46,7 +46,7 @@ def GenerateConfig(context):
                 'boot': True,
                 'autoDelete': True,
                 'initializeParams': {
-                    'diskName': project + '-boot',
+                    #'diskName': instance + '-boot',
                     'sourceImage': ''.join([COMPUTE_URL_BASE, 'projects/',
                                                 'rhel-cloud/global/'
                                                  'images/rhel-7-v20190326'])
