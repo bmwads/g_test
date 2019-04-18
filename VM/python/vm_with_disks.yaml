@@ -24,4 +24,4 @@ resources:
      - sizeGb: 50
        diskType: pd-standard
        name: vmname-disk-1
-    networkTags: prod
+    tags: prod
