@@ -37,8 +37,7 @@ def GenerateConfig(context):
                           'type': ''.join([COMPUTE_URL_BASE,
                                            'projects/', project, '/zones/',
                                            context.properties['zone'],
-                                           '/diskTypes/', disk_obj['diskType']])
-                          'tags': ['test']  
+                                           '/diskTypes/', disk_obj['diskType']]) 
                       }
                      })
   disks = []
