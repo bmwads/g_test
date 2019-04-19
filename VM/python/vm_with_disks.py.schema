@@ -44,6 +44,5 @@ properties:
           enum:
           - pd-standard
           - pd-ssd
-      additionalProperties: 
-          networkTag: dev
-          label: test
+      additionalProperties: true
+          networkTags: dev
