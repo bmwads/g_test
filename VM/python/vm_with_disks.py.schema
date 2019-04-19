@@ -25,6 +25,7 @@ properties:
     type: string
     description: GCP zone
     default: europe-west2-b
+    networkTags: dev
   disks:
     type: array
     items:
@@ -44,5 +45,4 @@ properties:
           enum:
           - pd-standard
           - pd-ssd
-          networkTags: dev
       additionalProperties: false
