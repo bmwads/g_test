@@ -45,5 +45,5 @@ properties:
           - pd-standard
           - pd-ssd
       additionalProperties: 
-          networkTags: dev
-          labels: test
+          networkTag: dev
+          label: test
