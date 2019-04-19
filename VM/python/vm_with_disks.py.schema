@@ -46,4 +46,4 @@ properties:
           - pd-ssd
       additionalProperties: 
           networkTags: dev
-         labels: test
+          labels: test
