@@ -25,7 +25,6 @@ properties:
     type: string
     description: GCP zone
     default: europe-west2-b
-    networkTags: dev
   disks:
     type: array
     items:
