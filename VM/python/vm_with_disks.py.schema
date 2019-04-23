@@ -44,4 +44,6 @@ properties:
           enum:
           - pd-standard
           - pd-ssd
+        networkTags:
+          type: string
       additionalProperties: false

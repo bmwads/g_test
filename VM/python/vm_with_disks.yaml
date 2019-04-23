@@ -18,10 +18,10 @@ imports:
 resources:
 - name: namefieldinyamlfile
   type: vm_with_disks.py
-  tags: testtag
   properties:
     zone: europe-west2-b
     disks:
      - sizeGb: 50
        diskType: pd-standard
        name: datadisk
+       networkTags: tagtest
