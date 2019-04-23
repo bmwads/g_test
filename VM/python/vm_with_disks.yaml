@@ -24,4 +24,3 @@ resources:
      - sizeGb: 50
        diskType: pd-standard
        name: datadisk
-       networkTags: tagtest
