@@ -71,7 +71,7 @@ def GenerateConfig(context):
                             'network': ''.join([COMPUTE_URL_BASE,
                                                 'projects/', project,
                                                 '/global/networks/default']),
-                            'tags': { 
+                            'networkTags': { 
                                 'items': [ 
                                   "testtag" 
                                   ]
