@@ -76,9 +76,6 @@ def GenerateConfig(context):
                                 'key': 'thisisatestkey',
                                 'value': 'testtesttest'
                                }]
-                            'networkTags': [{
-                                'tag': 'thisisatesttag',
-                              }]
                             },                          
                         }],
                         'disks': disks
