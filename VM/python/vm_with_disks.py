@@ -72,7 +72,7 @@ def GenerateConfig(context):
                                                 'projects/', project,
                                                 '/global/networks/default']),
                         'metadata': {
-                            'labels': [{
+                            'items': [{
                                 'key': 'thisisatestkey',
                                 'value': 'testtesttest'
                                }]
