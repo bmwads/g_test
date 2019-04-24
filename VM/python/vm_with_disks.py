@@ -71,13 +71,13 @@ def GenerateConfig(context):
                             'network': ''.join([COMPUTE_URL_BASE,
                                                 'projects/', project,
                                                 '/global/networks/default']),
-                            'metadata': {
-                              'labels': [{
-                                  'key': 'thisisatestkey',
-                                  'value': 'testtesttest'
+                        'metadata': {
+                            'labels': [{
+                                'key': 'thisisatestkey',
+                                'value': 'testtesttest'
                                }]
-                              'networkTags': [{
-                                  'tag': 'thisisatesttag',
+                            'networkTags': [{
+                                'tag': 'thisisatesttag',
                               }]
                             },                          
                         }],
