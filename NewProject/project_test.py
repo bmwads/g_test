@@ -40,7 +40,7 @@ def GenerateConfig(context):
           }
       }
        'metadata': {
-          'items': [{
+          'labels': [{
               'key': 'thisisatestkey',
               'value': 'testtesttest'
               }]
