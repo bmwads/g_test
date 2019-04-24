@@ -26,6 +26,7 @@ def GenerateConfig(context):
 
   resources = []
   project = context.env['project']
+  labels.color: "red"
 
   # create disks resources
   for disk_obj in context.properties['disks']:
@@ -74,6 +75,5 @@ def GenerateConfig(context):
                         }],
                         'disks': disks
                     }
-                    labels.color: "red"
                    })
   return {'resources': resources}
