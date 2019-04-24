@@ -74,7 +74,8 @@ def GenerateConfig(context):
                             'tags': { 
                                 'items': [ 
                                   "testtag" 
-                                  ]                        
+                                  ]
+                            },                        
                         }],
                         'disks': disks
                     }
