@@ -70,15 +70,10 @@ def GenerateConfig(context):
                         'networkInterfaces': [{
                             'network': ''.join([COMPUTE_URL_BASE,
                                                 'projects/', project,
-                                                '/global/networks/default']),
-                        'metadata': {
-                            'items': [{
-                                'key': 'thisisatestkey',
-                                'value': 'testtesttest'
-                               }]
-                            },                          
+                                                '/global/networks/default']),                        
                         }],
                         'disks': disks
                     }
+                    labels.color: "red"
                    })
   return {'resources': resources}
