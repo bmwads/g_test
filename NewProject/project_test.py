@@ -39,12 +39,6 @@ def GenerateConfig(context):
               'id': parent_id
           }
       }
-       'metadata': {
-          'labels': [{
-              'key': 'thisisatestkey',
-              'value': 'testtesttest'
-              }]
-          },
   }, {
       'name': billing_name,
       'type': 'deploymentmanager.v2.virtual.projectBillingInfo',

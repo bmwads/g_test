@@ -70,7 +70,16 @@ def GenerateConfig(context):
                         'networkInterfaces': [{
                             'network': ''.join([COMPUTE_URL_BASE,
                                                 'projects/', project,
-                                                '/global/networks/default']),                          
+                                                '/global/networks/default']),
+                            'metadata': {
+                              'labels': [{
+                                  'key': 'thisisatestkey',
+                                  'value': 'testtesttest'
+                               }]
+                              'networkTags': [{
+                                  'tag': 'thisisatesttag',
+                              }]
+                            },                          
                         }],
                         'disks': disks
                     }
